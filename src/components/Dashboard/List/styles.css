@@ -1,0 +1,60 @@
+.list-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin:1.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: var(--darkgrey);
+}
+.list-row:hover{
+    background-color: var(--darkgrey);
+}
+
+.list-row td{
+    width: 18%;
+    text-align: left;
+}
+.td-image{
+    width:3rem !important;
+    margin-right: 1.5rem;
+}
+.td-center-align{
+    text-align: center;
+}
+.td-right-align{
+    text-align: right;
+}
+.mobile-td-mkt{
+    display: none;
+}
+@media only screen and (max-width: 1100px) {
+    .td-icon{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1260px) {
+    .price-chip{
+        width:4.5rem
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .td-total-volume{
+        display: none;
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width: 850px) {
+    .desktop-td-mkt{
+        display: none;
+    }
+    .mobile-td-mkt{
+        display: block;
+    }
+    .chip-flex{
+        font-size: 0.5rem !important;
+    }
+}
+
